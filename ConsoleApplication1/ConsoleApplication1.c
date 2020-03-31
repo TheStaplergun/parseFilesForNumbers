@@ -1,7 +1,7 @@
 // ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 #include "pch.h"
-#include <stdio.h>
+#include <stdio.h> 
 #include <stdlib.h>
 #include <string.h>
 #include "vector.h"
@@ -137,7 +137,7 @@ int main()
       break;
     };
   };
-
+  
   parseLines(&bufferVector);
   printf("[");
   for (int i = 0; i < vector_total(&bufferVector); i++)

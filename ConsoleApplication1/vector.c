@@ -49,7 +49,7 @@ void vector_print(VECTOR *v)
   int i = 0;
   for (; i < v->total; i++)
   {
-    printf(v->items[i]);
+    printf("%i, ", v->items[i]);
   };
 }
 
@@ -80,9 +80,5 @@ void vector_delete(VECTOR *v, int index)
 
 void vector_free(VECTOR *v)
 {
-  for (int i = 0; i < v->total; i++)
-  {
-    free(v->items[i]);
-  };
   free(v->items);
 }
